@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write((true && (false || true)) || ( ((5 > 7) && (6 == 6)) || (true && true )) );
+        // 1
+        document.write("<br>" + '1. (true && <u>(false || true)</u>) || ( ((5 > 7) && (6 == 6)) || (true && true ))');
+        document.write("<br>" +"(false || true) – გვაძლევს true მნიშვნელობას, რადგან ან კავშირის დროს თუ ერთი ობიექტი true მნიშვნელობისაა, მთლიანი გამოსახულება ჭეშმარიტად ითვლება.")
+        // 2
+        document.write("<br>" + '2. (true && (false || true) || ( <u>((5 > 7) && (6 == 6))</u>) || (true && true ))');
+        document.write("<br>" + '(5 > 7) არის მცდარი, 6 == 6) არის ჭეშმარიტი, ეს გამოსახულება გვაძლებს false-ს, რადგან გვაქვს და კავშირი და ამ დროს ორივე ობიექტი აუცილებლად true უნდა იყოს. ');
+        document.write("<br>" + '3. (true && (false || true) || ( ((5 > 7) && (6 == 6))) || <u>(true && true )</u>)');
+        document.write("<br>" + "(true && true ) – გვაძლევს true–ს");
+        document.write("<br>" + " მივიღეთ <b>(true&&true)∣∣((false)∣∣(true))</b>");
+        document.write("<br>" + " <b>true&&true=true</b>" +"<br>" +"<b>false∣∣true=true</b>" );
+        document.write("<br>" + "<b>true∣∣true=true</b>");
+
+
+
+    </script>
+</body>
+</html>
